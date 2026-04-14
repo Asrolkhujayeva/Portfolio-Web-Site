@@ -6,69 +6,68 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-			/* Исправляем сетку, чтобы карточки были одной высоты в ряду */
-			.row {
-				display: flex;
-				flex-wrap: wrap;
-				align-items: stretch;
-			}
+    .row {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: stretch !important;
+    }
 
-			.work-item {
-				display: flex;
-				flex-direction: column;
-				margin-bottom: 2em;
-				background: rgba(255, 255, 255, 0.05); /* Легкий фон для единообразия */
-				padding: 1.5em;
-				border-radius: 0.5em;
-			}
+    .work-item {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: b !important;
+        height: 100% !important;
+        margin-bottom: 3em !important;
+        padding: 1em !important;
+    }
 
-			/* Заставляем превью быть одинакового размера */
-			.work-item .image.thumb {
-				height: 200px;
-				overflow: hidden;
-				margin-bottom: 1.25em;
-				display: block;
-			}
+    .work-item .image.thumb {
+        height: 180px !important;
+        margin-bottom: 1em !important;
+    }
 
-			.work-item .image.thumb img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-				transition: transform 0.3s ease;
-			}
+    .work-item .image.thumb img {
+        height: 100% !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    }
 
-			/* Выравниваем заголовки */
-			.work-item h3 {
-				font-size: 1.1em;
-				min-height: 2.5em;
-				margin: 0 0 0.5em 0;
-			}
+    .work-item h3 {
+        min-height: 3em !important;
+        margin-bottom: 0.5em !important;
+        font-size: 1.1em !important;
+    }
 
-			/* Описание занимает всё свободное место, толкая кнопки вниз */
-			.work-item p {
-				flex-grow: 1;
-				font-size: 0.9em;
-				line-height: 1.5;
-				margin-bottom: 1.5em;
-			}
+    .work-item p {
+        flex-grow: 1 !important;
+        min-height: 6em !important;
+        margin-bottom: 1.5em !important;
+        font-size: 0.9em !important;
+        line-height: 1.4 !important;
+    }
 
-			/* Кнопки всегда внизу */
-			.work-item .actions {
-				margin: auto 0 0 0;
-				padding-top: 1em;
-			}
+    .work-item .actions {
+        margin-top: auto !important;
+        display: flex !important;
+        gap: 10px !important;
+        justify-content: flex-start !important;
+    }
 
-			.work-item .actions li {
-				display: block;
-				margin-bottom: 0.5em;
-			}
+    .work-item .actions li {
+        padding: 0 !important;
+        margin: 0 !important;
+        flex: 1;
+    }
 
-			.work-item .button {
-				width: 100%;
-				text-align: center;
-				padding: 0 1em;
-			}
-		</style>
+    .work-item .button {
+        width: 100% !important;
+        text-align: center !important;
+        padding: 0 0.5em !important;
+        font-size: 0.7em !important;
+        white-space: nowrap !important;
+    }
+</style>
+
 	</head>
 	<body class="is-preload">
 
