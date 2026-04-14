@@ -1,38 +1,74 @@
 <!DOCTYPE HTML>
 <html>
-	<style>
-    .work-item {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        margin-bottom: 2em;
-    }
-    .work-item h3 {
-        min-height: 3.5em;
-        margin-bottom: 0.5em;
-    }
-
-    .work-item p {
-        flex-grow: 1;
-        min-height: 6em;
-        margin-bottom: 1.5em;
-    }
-
-    .work-item .image.thumb img {
-        height: 200px; 
-        object-fit: cover;
-    }
-
-    .work-item .actions {
-        margin-top: auto;
-        margin-bottom: 0;
-    }
-</style>
 	<head>
 		<title>Barno</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Исправляем сетку, чтобы карточки были одной высоты в ряду */
+			.row {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: stretch;
+			}
+
+			.work-item {
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 2em;
+				background: rgba(255, 255, 255, 0.05); /* Легкий фон для единообразия */
+				padding: 1.5em;
+				border-radius: 0.5em;
+			}
+
+			/* Заставляем превью быть одинакового размера */
+			.work-item .image.thumb {
+				height: 200px;
+				overflow: hidden;
+				margin-bottom: 1.25em;
+				display: block;
+			}
+
+			.work-item .image.thumb img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				transition: transform 0.3s ease;
+			}
+
+			/* Выравниваем заголовки */
+			.work-item h3 {
+				font-size: 1.1em;
+				min-height: 2.5em;
+				margin: 0 0 0.5em 0;
+			}
+
+			/* Описание занимает всё свободное место, толкая кнопки вниз */
+			.work-item p {
+				flex-grow: 1;
+				font-size: 0.9em;
+				line-height: 1.5;
+				margin-bottom: 1.5em;
+			}
+
+			/* Кнопки всегда внизу */
+			.work-item .actions {
+				margin: auto 0 0 0;
+				padding-top: 1em;
+			}
+
+			.work-item .actions li {
+				display: block;
+				margin-bottom: 0.5em;
+			}
+
+			.work-item .button {
+				width: 100%;
+				text-align: center;
+				padding: 0 1em;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -56,16 +92,8 @@
 							<h2>Hi, I’m Barno — a junior data analyst with a background in IT. I graduated from Inha University in Tashkent, and I’m currently building my skills in Python, Power BI, Excel, and SQL through real-world projects.</h2>
 						</header>
 						<ul class="actions">
-							<li>
-								<a href="https://www.linkedin.com/in/barno-asrolkhujaeva-980234201" class="button" target="_blank">
-								Learn More via LinkedIn
-								</a>
-							</li>
-							<li>
-								<a href="https://www.canva.com/design/DAGsBtyMATk/fwGYELRCQMg_BDH8qJE1NA/view?utm_content=DAGsBtyMATk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5e003501af" class="button" target="_blank">
-								View my Resume
-								</a>
-							</li>
+							<li><a href="https://www.linkedin.com/in/barno-asrolkhujaeva-980234201" class="button" target="_blank">Learn More via LinkedIn</a></li>
+							<li><a href="https://www.canva.com/design/DAGsBtyMATk/fwGYELRCQMg_BDH8qJE1NA/view?utm_content=DAGsBtyMATk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5e003501af" class="button" target="_blank">View my Resume</a></li>
 						</ul>
 					</section>
 
@@ -73,79 +101,65 @@
 					<section id="two">
 						<h2>Recent Work</h2>
 						<div class="row">
-							<!-- NEW PROJECT: GBC Analytics Dashboard -->
+							<!-- Project 1 -->
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="https://vercel.app" class="image fit thumb" target="_blank">
-									<img src="images/fulls/dashboard.png" alt="GBC Analytics Dashboard Preview""")/>>
+									<img src="images/fulls/dashboard.png" alt="GBC Analytics Dashboard" />
 								</a>
 								<h3>GBC Analytics Dashboard</h3>
-								<p>A full-cycle data project: automated ETL process from RetailCRM to Supabase (SQL), visualized in a live web dashboard on Vercel. Includes a Telegram bot for real-time alerts on high-value orders (>50,000 ₸).</p>
+								<p>Full-cycle data project: automated ETL process from RetailCRM to Supabase, visualized on Vercel. Includes a Telegram bot for alerts on orders >50,000 ₸.</p>
 								<ul class="actions">
-									<li>
-										<a href="https://vercel.app" class="button primary" target="_blank">See Live</a>
-										<a href="https://github.com" class="button" target="_blank">GitHub</a>
-									</li>
+									<li><a href="https://vercel.app" class="button primary" target="_blank">See Live</a></li>
+									<li><a href="https://github.com" class="button" target="_blank">See on GitHub</a></li>
 								</ul>
 							</article>
 
+							<!-- Project 2 -->
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/dp survey.gif" class="image fit thumb">
-									<img src="images/fulls/dp survey.gif" alt="Data Professional Survey Preview""")/>>
+									<img src="images/fulls/dp survey.gif" alt="Data Professional Survey" />
 								</a>
 								<h3>Data Professional Survey Breakdown</h3>
-								<p>This interactive Power BI dashboard provides insights into a global survey of data professionals. It explores key aspects such as salary trends, job satisfaction, and programming preferences.</p>
+								<p>Interactive Power BI dashboard providing insights into global salary trends, job satisfaction, and programming preferences of data professionals.</p>
 								<ul class="actions">
-									<li>
-									<a href="https://github.com/Asrolkhujayeva/portfolio-projects/tree/main/Data%20Professional%20Survey%20Dashboard" class="button" target="_blank">
-										See on GitHub
-									</a>
-									</li>
+									<li><a href="https://github.com/Asrolkhujayeva/portfolio-projects/tree/main/Data%20Professional%20Survey%20Dashboard" class="button" target="_blank">See on GitHub</a></li>
 								</ul>
 							</article>
 
+							<!-- Project 3 -->
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/sales analitics.gif" class="image fit thumb"><img src="images/fulls/sales analitics.gif" alt="" /></a>
+								<a href="images/fulls/sales analitics.gif" class="image fit thumb">
+									<img src="images/fulls/sales analitics.gif" alt="Interactive Sales Dashboard" />
+								</a>
 								<h3>Interactive Sales Dashboard</h3>
-								<p>This project is a dynamic Power BI dashboard that provides a clear overview of sales performance. It analyzes daily/weekly trends and customer profitability.</p>
+								<p>Dynamic Power BI dashboard analyzing daily/weekly sales trends, customer profitability, and actionable business insights.</p>
 								<ul class="actions">
-									<li>
-									<a href="https://github.com/Asrolkhujayeva/portfolio-projects/tree/main/Sales%20Analitics" class="button" target="_blank">
-										See on GitHub
-									</a>
-									</li>
+									<li><a href="https://github.com/Asrolkhujayeva/portfolio-projects/tree/main/Sales%20Analitics" class="button" target="_blank">See on GitHub</a></li>
 								</ul>
 							</article>
 
+							<!-- Project 4 -->
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/01.png" class="image fit thumb">
-									<img src="images/fulls/01.png" alt="Amazon Web Scraper Preview""")/>>
+									<img src="images/fulls/01.png" alt="Amazon Web Scraper" />
 								</a>
 								<h3>Amazon Web Scraper with Python</h3>
-								<p>This script monitors the price of an Amazon product and appends the data to a CSV file every 24 hours — perfect for tracking price changes.</p>
+								<p>Python script for automated price monitoring. Tracks changes and logs data to CSV every 24 hours.</p>
 								<ul class="actions">
-									<li>
-									<a href="https://github.com/Asrolkhujayeva/portfolio-projects/tree/main/Amazon%20Web%20Scraping" class="button" target="_blank">
-										See on GitHub
-									</a>
-									</li>
+									<li><a href="https://github.com/Asrolkhujayeva/portfolio-projects/tree/main/Amazon%20Web%20Scraping" class="button" target="_blank">See on GitHub</a></li>
 								</ul>
 							</article>
 
+							<!-- Project 5 -->
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/top 3 products analysis for autumn.gif" class="image fit thumb">
-									<img src="images/fulls/top 3 products analysis for autumn.gif" alt=""")/>>
+									<img src="images/fulls/top 3 products analysis for autumn.gif" alt="Autumn Analysis" />
 								</a>
-								<h3>Top 3 actual products for Autumn Analysis</h3>
-								<p>Based on demand, ROI, and seasonal relevance, the following products were identified as the most promising for launch in Autumn 2025.</p>
+								<h3>Top 3 Products for Autumn Analysis</h3>
+								<p>Strategic analysis based on demand and ROI to identify the most promising products for launch in Autumn 2025.</p>
 								<ul class="actions">
-									<li>
-									<a href="https://docs.google.com/document/d/18S9FVqM1IyCMpro3dabGFFwdCGCQ1y88p0h_0K4bwK8/edit?usp=sharing" class="button" target="_blank">
-										See Report
-									</a>
-									<a href="https://docs.google.com/spreadsheets/d/1lF_i6TX9yEZoQZoypKYKc2Wwl1MqNyjzQM9GfS_i99Y/edit?usp=sharing" class="button" target="_blank">
-										See Excel
-									</a>
-									</li>
+									<li><a href="https://docs.google.com/document/d/18S9FVqM1IyCMpro3dabGFFwdCGCQ1y88p0h_0K4bwK8/edit?usp=sharing" class="button" target="_blank">See Report</a></li>
+									<li><a href="https://docs.google.com/spreadsheets/d/1lF_i6TX9yEZoQZoypKYKc2Wwl1MqNyjzQM9GfS_i99Y/edit?usp=sharing" class="button" target="_blank">See Excel</a></li>
 								</ul>
 							</article>
 						</div>
