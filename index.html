@@ -50,7 +50,7 @@
         margin-top: auto !important;
         display: flex !important;
         gap: 10px !important;
-        justify-content: flex-start !important;
+        justify-content: space-between !important;
     }
 
     .work-item .actions li {
@@ -66,6 +66,38 @@
         font-size: 0.7em !important;
         white-space: nowrap !important;
     }
+
+	#header {
+    width: 35%;
+    padding: 6em 3em 3em 3em;
+}
+
+#header .inner {
+    max-width: 360px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#header h1 {
+    font-size: 1.05em;
+    line-height: 1.65;
+}
+
+#main {
+    margin-left: 35%;
+}
+
+@media screen and (max-width: 980px) {
+    #header {
+        width: 100%;
+        padding: 4em 2em;
+        position: relative;
+    }
+
+    #main {
+        margin-left: 0;
+    }
+}			
 </style>
 
 	</head>
@@ -76,9 +108,9 @@
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
 					<h1>
-						<strong>I am Barno</strong>, an enthusiastic Data Analist.<br />
-						This is where my passion for data comes to life.
-						Explore the projects I’ve built while transitioning into the world of data analytics.<br />
+					    <strong>I am Barno</strong>, a Data Analyst with an IT background.<br />
+					    I turn data into insights through analytics, visualization, and automation.<br />
+					    Explore my Power BI, Python, SQL, and Excel projects.
 					</h1>
 				</div>
 			</header>
@@ -88,7 +120,11 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>Hi, I’m Barno — a junior data analyst with a background in IT. I graduated from Inha University in Tashkent, and I’m currently building my skills in Python, Power BI, Excel, and SQL through real-world projects.</h2>
+						    <h2>
+						        Hi, I’m Barno — a junior data analyst with a background in IT.
+						        I specialize in SQL, Python, Power BI, and Excel, turning data into actionable insights through analytical and visualization projects.
+						        Currently expanding my expertise in Data Engineering through EPAM training.
+						    </h2>
 						</header>
 						<ul class="actions">
 							<li><a href="https://www.linkedin.com/in/barno-asrolkhujaeva-980234201" class="button" target="_blank">Learn More via LinkedIn</a></li>
