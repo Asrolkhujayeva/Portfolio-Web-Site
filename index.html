@@ -1,226 +1,289 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Barno</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<style>
-    .row {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        align-items: stretch !important;
-    }
+<head>
+    <title>Barno Bayramova | Data Analyst Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 
-    .work-item {
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: b !important;
-        height: 100% !important;
-        margin-bottom: 3em !important;
-        padding: 1em !important;
-    }
+    <style>
+        #header {
+            width: 32%;
+            padding: 6em 3em 3em 3em;
+            text-align: center;
+        }
 
-    .work-item .image.thumb {
-        height: 180px !important;
-        margin-bottom: 1em !important;
-    }
+        #header .inner {
+            max-width: 320px;
+            margin: 0 auto;
+        }
 
-    .work-item .image.thumb img {
-        height: 100% !important;
-        width: 100% !important;
-        object-fit: cover !important;
-    }
+        #header .image.avatar img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
 
-    .work-item h3 {
-        min-height: 3em !important;
-        margin-bottom: 0.5em !important;
-        font-size: 1.1em !important;
-    }
+        #header h1 {
+            font-size: 1.05em;
+            line-height: 1.6;
+            margin-top: 1.5em;
+        }
 
-    .work-item p {
-        flex-grow: 1 !important;
-        min-height: 6em !important;
-        margin-bottom: 1.5em !important;
-        font-size: 0.9em !important;
-        line-height: 1.4 !important;
-    }
+        #header h1 strong {
+            display: block;
+            font-size: 1.35em;
+            margin-bottom: 0.4em;
+        }
 
-    .work-item .actions {
-        margin-top: auto !important;
-        display: flex !important;
-        gap: 10px !important;
-        justify-content: space-between !important;
-    }
+        #header .subtitle {
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-top: 1em;
+        }
 
-    .work-item .actions li {
-        padding: 0 !important;
-        margin: 0 !important;
-        flex: 1;
-    }
+        #header .skills {
+            font-size: 0.9em;
+            margin-top: 1.5em;
+            letter-spacing: 0.03em;
+        }
 
-    .work-item .button {
-        width: 100% !important;
-        text-align: center !important;
-        padding: 0 0.5em !important;
-        font-size: 0.7em !important;
-        white-space: nowrap !important;
-    }
+        #main {
+            margin-left: 32%;
+        }
 
-	#header {
-    width: 35%;
-    padding: 6em 3em 3em 3em;
-}
+        .row {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            align-items: stretch !important;
+        }
 
-#header .inner {
-    max-width: 360px;
-    margin: 0 auto;
-    text-align: center;
-}
+        .work-item {
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-between !important;
+            height: 100% !important;
+            margin-bottom: 3em !important;
+            padding: 1em !important;
+        }
 
-#header h1 {
-    font-size: 1.05em;
-    line-height: 1.65;
-}
+        .work-item .image.thumb {
+            height: 180px !important;
+            margin-bottom: 1em !important;
+        }
 
-#main {
-    margin-left: 35%;
-}
+        .work-item .image.thumb img {
+            height: 100% !important;
+            width: 100% !important;
+            object-fit: cover !important;
+        }
 
-@media screen and (max-width: 980px) {
-    #header {
-        width: 100%;
-        padding: 4em 2em;
-        position: relative;
-    }
+        .work-item h3 {
+            min-height: 3em !important;
+            margin-bottom: 0.5em !important;
+            font-size: 1.1em !important;
+        }
 
-    #main {
-        margin-left: 0;
-    }
-}			
-</style>
+        .work-item p {
+            flex-grow: 1 !important;
+            min-height: 6em !important;
+            margin-bottom: 1.5em !important;
+            font-size: 0.9em !important;
+            line-height: 1.4 !important;
+        }
 
-	</head>
-	<body class="is-preload">
+        .work-item .actions {
+            margin-top: auto !important;
+            display: flex !important;
+            gap: 10px !important;
+            justify-content: flex-start !important;
+        }
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h1>
-					    <strong>I am Barno</strong>, a Data Analyst with an IT background.<br />
-					    I turn data into insights through analytics, visualization, and automation.<br />
-					    Explore my Power BI, Python, SQL, and Excel projects.
-					</h1>
-				</div>
-			</header>
+        .work-item .actions li {
+            padding: 0 !important;
+            margin: 0 !important;
+            flex: 1;
+        }
 
-		<!-- Main -->
-			<div id="main">
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-						    <h2>
-						        Hi, I’m Barno — a junior data analyst with a background in IT.
-						        I specialize in SQL, Python, Power BI, and Excel, turning data into actionable insights through analytical and visualization projects.
-						        Currently expanding my expertise in Data Engineering through EPAM training.
-						    </h2>
-						</header>
-						<ul class="actions">
-							<li><a href="https://www.linkedin.com/in/barno-asrolkhujaeva-980234201" class="button" target="_blank">Learn More via LinkedIn</a></li>
-							<li><a href="https://www.canva.com/design/DAGsBtyMATk/fwGYELRCQMg_BDH8qJE1NA/view?utm_content=DAGsBtyMATk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5e003501af" class="button" target="_blank">View my Resume</a></li>
-						</ul>
-					</section>
+        .work-item .button {
+            width: 100% !important;
+            text-align: center !important;
+            padding: 0 0.5em !important;
+            font-size: 0.7em !important;
+            white-space: nowrap !important;
+        }
 
-				<!-- Two -->
-					<section id="two">
-						<h2>Recent Work</h2>
-						<div class="row">
-							<!-- Project 1 -->
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://vercel.app" class="image fit thumb" target="_blank">
-									<img src="images/fulls/dashboard.png" alt="GBC Analytics Dashboard" />
-								</a>
-								<h3>GBC Analytics Dashboard</h3>
-								<p>Full-cycle data project: automated ETL process from RetailCRM to Supabase, visualized on Vercel. Includes a Telegram bot for alerts on orders >50,000 ₸.</p>
-								<ul class="actions">
-									<li><a href="https://vercel.app" class="button primary" target="_blank">See Live</a></li>
-									<li><a href="https://github.com" class="button" target="_blank">See on GitHub</a></li>
-								</ul>
-							</article>
+        @media screen and (max-width: 980px) {
+            #header {
+                width: 100%;
+                position: relative;
+                padding: 4em 2em;
+            }
 
-							<!-- Project 2 -->
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/dp survey.gif" class="image fit thumb">
-									<img src="images/fulls/dp survey.gif" alt="Data Professional Survey" />
-								</a>
-								<h3>Data Professional Survey Breakdown</h3>
-								<p>Interactive Power BI dashboard providing insights into global salary trends, job satisfaction, and programming preferences of data professionals.</p>
-								<ul class="actions">
-									<li><a href="https://github.com/Asrolkhujayeva/portfolio-projects/tree/main/Data%20Professional%20Survey%20Dashboard" class="button" target="_blank">See on GitHub</a></li>
-								</ul>
-							</article>
+            #main {
+                margin-left: 0;
+            }
 
-							<!-- Project 3 -->
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/sales analitics.gif" class="image fit thumb">
-									<img src="images/fulls/sales analitics.gif" alt="Interactive Sales Dashboard" />
-								</a>
-								<h3>Interactive Sales Dashboard</h3>
-								<p>Dynamic Power BI dashboard analyzing daily/weekly sales trends, customer profitability, and actionable business insights.</p>
-								<ul class="actions">
-									<li><a href="https://github.com/Asrolkhujayeva/portfolio-projects/tree/main/Sales%20Analitics" class="button" target="_blank">See on GitHub</a></li>
-								</ul>
-							</article>
+            #header .inner {
+                max-width: 420px;
+            }
+        }
+    </style>
+</head>
 
-							<!-- Project 4 -->
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/01.png" class="image fit thumb">
-									<img src="images/fulls/01.png" alt="Amazon Web Scraper" />
-								</a>
-								<h3>Amazon Web Scraper with Python</h3>
-								<p>Python script for automated price monitoring. Tracks changes and logs data to CSV every 24 hours.</p>
-								<ul class="actions">
-									<li><a href="https://github.com/Asrolkhujayeva/portfolio-projects/tree/main/Amazon%20Web%20Scraping" class="button" target="_blank">See on GitHub</a></li>
-								</ul>
-							</article>
+<body class="is-preload">
 
-							<!-- Project 5 -->
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/top 3 products analysis for autumn.gif" class="image fit thumb">
-									<img src="images/fulls/top 3 products analysis for autumn.gif" alt="Autumn Analysis" />
-								</a>
-								<h3>Top 3 Products for Autumn Analysis</h3>
-								<p>Strategic analysis based on demand and ROI to identify the most promising products for launch in Autumn 2025.</p>
-								<ul class="actions">
-									<li><a href="https://docs.google.com/document/d/18S9FVqM1IyCMpro3dabGFFwdCGCQ1y88p0h_0K4bwK8/edit?usp=sharing" class="button" target="_blank">See Report</a></li>
-									<li><a href="https://docs.google.com/spreadsheets/d/1lF_i6TX9yEZoQZoypKYKc2Wwl1MqNyjzQM9GfS_i99Y/edit?usp=sharing" class="button" target="_blank">See Excel</a></li>
-								</ul>
-							</article>
-						</div>
-					</section>
-			</div>
+    <!-- Header -->
+    <header id="header">
+        <div class="inner">
+            <a href="#" class="image avatar">
+                <img src="images/avatar.jpg" alt="Barno Bayramova" />
+            </a>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/barno-asrolkhujaeva-980234201" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/Asrolkhujayeva" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
-						<li><a href="mailto:barno1686@gmail.com" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+            <h1>
+                <strong>Barno Bayramova</strong>
+                Junior Data Analyst<br />
+                Data Engineering Trainee
+            </h1>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	</body>
+            <p class="subtitle">
+                I create data-driven dashboards, automation projects, and analytical reports.
+            </p>
+
+            <p class="skills">
+                SQL • Python • Power BI • Excel
+            </p>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- One -->
+        <section id="one">
+            <header class="major">
+                <h2>
+                    Hi, I’m Barno — a junior data analyst with a background in IT.
+                    I specialize in SQL, Python, Power BI, and Excel, turning data into actionable insights through analytical and visualization projects.
+                    Currently expanding my expertise in Data Engineering through EPAM training.
+                </h2>
+            </header>
+
+            <ul class="actions">
+                <li>
+                    <a href="https://www.linkedin.com/in/barno-asrolkhujaeva-980234201" class="button" target="_blank">
+                        Learn More via LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.canva.com/design/DAGsBtyMATk/fwGYELRCQMg_BDH8qJE1NA/view?utm_content=DAGsBtyMATk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5e003501af" class="button" target="_blank">
+                        View my Resume
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Two -->
+        <section id="two">
+            <h2>Recent Work</h2>
+
+            <div class="row">
+
+                <article class="col-6 col-12-xsmall work-item">
+                    <a href="https://vercel.app" class="image fit thumb" target="_blank">
+                        <img src="images/fulls/dashboard.png" alt="GBC Analytics Dashboard" />
+                    </a>
+                    <h3>GBC Analytics Dashboard</h3>
+                    <p>Full-cycle data project: automated ETL process from RetailCRM to Supabase, visualized on Vercel. Includes a Telegram bot for alerts on orders >50,000 ₸.</p>
+                    <ul class="actions">
+                        <li><a href="https://vercel.app" class="button primary" target="_blank">See Live</a></li>
+                        <li><a href="https://github.com" class="button" target="_blank">GitHub</a></li>
+                    </ul>
+                </article>
+
+                <article class="col-6 col-12-xsmall work-item">
+                    <a href="images/fulls/dp survey.gif" class="image fit thumb">
+                        <img src="images/fulls/dp survey.gif" alt="Data Professional Survey" />
+                    </a>
+                    <h3>Data Professional Survey Breakdown</h3>
+                    <p>Interactive Power BI dashboard providing insights into global salary trends, job satisfaction, and programming preferences of data professionals.</p>
+                    <ul class="actions">
+                        <li><a href="https://github.com/Asrolkhujayeva/portfolio-projects/tree/main/Data%20Professional%20Survey%20Dashboard" class="button" target="_blank">GitHub</a></li>
+                    </ul>
+                </article>
+
+                <article class="col-6 col-12-xsmall work-item">
+                    <a href="images/fulls/sales analitics.gif" class="image fit thumb">
+                        <img src="images/fulls/sales analitics.gif" alt="Interactive Sales Dashboard" />
+                    </a>
+                    <h3>Interactive Sales Dashboard</h3>
+                    <p>Dynamic Power BI dashboard analyzing daily and weekly sales trends, customer profitability, and actionable business insights.</p>
+                    <ul class="actions">
+                        <li><a href="https://github.com/Asrolkhujayeva/portfolio-projects/tree/main/Sales%20Analitics" class="button" target="_blank">GitHub</a></li>
+                    </ul>
+                </article>
+
+                <article class="col-6 col-12-xsmall work-item">
+                    <a href="images/fulls/01.png" class="image fit thumb">
+                        <img src="images/fulls/01.png" alt="Amazon Web Scraper" />
+                    </a>
+                    <h3>Amazon Web Scraper with Python</h3>
+                    <p>Python script for automated price monitoring. Tracks price changes and logs data to CSV every 24 hours.</p>
+                    <ul class="actions">
+                        <li><a href="https://github.com/Asrolkhujayeva/portfolio-projects/tree/main/Amazon%20Web%20Scraping" class="button" target="_blank">GitHub</a></li>
+                    </ul>
+                </article>
+
+                <article class="col-6 col-12-xsmall work-item">
+                    <a href="images/fulls/top 3 products analysis for autumn.gif" class="image fit thumb">
+                        <img src="images/fulls/top 3 products analysis for autumn.gif" alt="Autumn Product Analysis" />
+                    </a>
+                    <h3>Top 3 Products for Autumn Analysis</h3>
+                    <p>Strategic analysis based on demand and ROI to identify the most promising products for launch in Autumn 2025.</p>
+                    <ul class="actions">
+                        <li><a href="https://docs.google.com/document/d/18S9FVqM1IyCMpro3dabGFFwdCGCQ1y88p0h_0K4bwK8/edit?usp=sharing" class="button" target="_blank">Report</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1lF_i6TX9yEZoQZoypKYKc2Wwl1MqNyjzQM9GfS_i99Y/edit?usp=sharing" class="button" target="_blank">Excel</a></li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                <li>
+                    <a href="https://www.linkedin.com/in/barno-asrolkhujaeva-980234201" class="icon brands fa-linkedin" target="_blank">
+                        <span class="label">LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Asrolkhujayeva" class="icon brands fa-github" target="_blank">
+                        <span class="label">GitHub</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:barno1686@gmail.com" class="icon solid fa-envelope">
+                        <span class="label">Email</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="copyright">
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
 </html>
